@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+[class^="testimonial-for"] {
+  border: 2px solid blueviolet;
+  padding: 18px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1440px;
+  justify-content: center;
+  align-content: center;
+  gap: 18px;
+}
+
+.testimonial-for-Daniel {
+  background: url(img/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 10%;
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  border-radius: 12px;
+}
+.testimonial-for-Jonathan {
+  grid-column-start: 2 / 3;
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonial-for-Jeanette {
+  grid-row-start: 2;
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonial-for-Patrick {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2 / 4;
+}
+.testimonial-for-Kira {
+  grid-row-start: 1;
+  grid-column-end: -1;
+  grid-row-end: span 2;
+  background-color: hsl(0, 0%, 100%);
+}
+.profile-details {
+  margin: 12px;
+}
+
+/* details */
+
+.profile-details {
+  display: flex;
+  color: hsl(0, 0%, 70%);
+}
+
+.padding-25 {
+  padding: 30px;
+}
+.avator {
+  border-radius: 50%;
+  margin-right: 15px;
+}
