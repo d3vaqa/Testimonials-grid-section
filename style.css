@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 [class^="testimonial-for"] {
-  border: 2px solid blueviolet;
   padding: 18px;
 }
 .container {
@@ -12,13 +11,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .testimonial {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  max-width: 1440px;
+  width: 1150px;
   justify-content: center;
   align-content: center;
   gap: 18px;
@@ -27,7 +28,7 @@
 .testimonial-for-Daniel {
   background: url(img/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: 90% 10%;
+  background-position: 90% 0%;
   grid-column: span 2;
   background-color: hsl(263, 55%, 52%);
   color: white;
@@ -63,9 +64,36 @@
 }
 
 .padding-25 {
-  padding: 30px;
+  padding: 25px;
 }
 .avator {
   border-radius: 50%;
   margin-right: 15px;
+  height: 40px;
+  width: 40px;
+}
+.user-name {
+  color: hsl(0, 0%, 81%);
+}
+.user-status {
+  color: hsl(0, 0%, 50%);
+}
+.testimonial-highlights {
+  color: hsl(210, 46%, 95%);
+  font-size: 18px;
+}
+.testimonial-details {
+  padding-top: 12px;
+  color: hsl(0, 0%, 70%);
+  font-size: 13px;
+}
+.text-color-black {
+  color: black;
+}
+.text-color-dark {
+  color: hsl(0, 0%, 50%);
+}
+
+.radius-12 {
+  border-radius: 12px;
 }
